@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.logInHeader{
+    width: 100%;
+}
+  
+.goBack{
+    color: #00707E;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px 10px;
+    display: inline-block;
+}
+  
+.logInMain{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+  
+.logInMain h1{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #00707E;
+    font-size: 40px;
+}
+  
+.introP{
+    color: gray;
+    font-size:x-large;
+    margin-bottom: 110px;
+}
+  
+.logInButtons{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+  
+.logInButtons a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-size: large;
+}
+  
+.fbButton{
+    background-color: dodgerblue;
+    color: white;
+    margin-bottom: 15px;
+}
+  
+.fbButton:hover{
+    background-color: rgb(30, 125, 221);
+}
+  
+.gButton{
+    border: 1px solid #00707E;
+    color: black;
+}
+  
+.gButton:hover{
+    background-color: rgb(240, 239, 239);
+}
+  
+.fbIcon{
+    margin-right: 10px;
+}
+  
+.gIcon{
+    margin-right: 10px;
+    color: 
+      linear-gradient(to bottom left,transparent 49%,#fbbc05 50%) 0 25%/48% 40%,
+      linear-gradient(to top    left,transparent 49%,#fbbc05 50%) 0 75%/48% 40%,
+    
+      linear-gradient(-40deg ,transparent 53%,#ea4335 54%),
+      linear-gradient( 45deg ,transparent 46%,#4285f4 48%),
+      #34a853;
+}
+  
+.orText{
+    color: #00707E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.orTextDash{
+    width: 20%;
+    border-top: 1px solid #00707E;
+}
+  
+.orTextP{
+    width: 30%;
+    font-weight: bold;
+}
+  
+.formBox{
+    font-weight: bold;
+    width: 100%;
+    font-size: small;
+}
+  
+.logInEmailLabel, .logInPasswordLabel{
+    color: #00707E;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.logInEmailField, .logInPasswordField{
+    border-color: #00707E;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+  
+.logInEmailField{
+    margin-bottom: 15px;
+}
+  
+.logInPasswordField{
+    margin-bottom: 10px;
+}
+  
+.visibilityToggleButton{
+    float: right;
+    position: relative;
+    top: -37px;
+    left: -12px;
+    background-color: transparent;
+    border: 0px;
+    display: block;
+    cursor: pointer;
+}
+  
+.toggleButton{
+}
+  
+.logInFP{
+    color: gray;
+    text-decoration: none;
+}
+  
+.logInFPp{
+    margin-bottom: 10px;
+}
+  
+.logInNTB{
+    color: gray;
+}
+  
+.logInNTBp{
+    margin-bottom: 200px;
+}
+  
+.logInNTB span{
+    color: black;
+}
+  
+.logInLOGINField{
+    display: block;
+    width: 100%;
+    background-color: #00707E;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: larger;
+    cursor: pointer;
+}
