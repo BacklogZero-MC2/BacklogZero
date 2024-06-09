@@ -1,0 +1,58 @@
+body{
+    background-color: #e1eaf2;
+}
+
+
+.pageMain{
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.top-line{
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.logo{
+    
+}
+.bell{
+    float: right;
+    margin: 10px 10px;
+    font-size: 30px;
+}
+.user{
+    float: right;
+    margin: 10px 10px;
+    font-size: 30px;
+}
+
+.search{
+    position: relative;
+}
+.filter{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.options{
+    overflow: hidden;
+    margin: 12px 0px;
+}
+.trending{
+    float: left;
+    margin-left: 10px;
+}
+.tr-arrow{
+    float: left;
+    margin: 3px 0px 0px 6px;
+}
+.sort{
+    float: right;
+    margin-right: 10px;
+}
+
+.card{
+    margin-bottom: 8px;
+}

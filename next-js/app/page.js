@@ -2,6 +2,9 @@
 
 import './globals.css';
 
+import Image from 'next/image';
+import Logo from '@/assets/logo.png';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
@@ -19,6 +22,7 @@ const page = () => {
 
   return (
     <div className='logInMain'>
+      <Image src={Logo} height={50} width={50} />
       <h1>Log in</h1>
       <p className='introP'>Log In To Access Your Personalized Learning Journey</p>
 

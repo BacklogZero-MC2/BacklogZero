@@ -1,0 +1,61 @@
+.card{
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 16px;
+    padding: 12px 10px;
+}
+
+.cardTop{
+    overflow: hidden;
+}
+.cardUsername{
+    float: left;
+    font-size: 14px;
+}
+.share{
+    float: right;
+    font-size: 20px;
+    margin: 0px 2px 0px 9px;
+}
+.bkmrk{
+    float: right;
+    font-size: 20px;
+    margin: 0px 9px;
+}
+
+.cardMain{
+    margin: 8px 0px 14px 0px;
+}
+.title{
+    margin: 4px 0px;
+    font-size: 18px;
+}
+.description{
+    margin: 4px 0px;
+    font-size: 16px;
+}
+
+.cardBottom{
+    overflow: hidden;
+}
+.votes{
+    float: left;
+    margin: 0px 3px;
+}
+.vote-arrow{
+    margin: 0px 2px 0px 0px;
+}
+.comments{
+    float: left;
+    margin: 0px 3px;
+}
+.comment-cloud{
+    margin: 0px 2px 0px 8px;
+}
+.time{
+    float: right;
+    font-size: 14px;
+}
+.gray{
+    color: #979797;
+}
