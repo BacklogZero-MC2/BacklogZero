@@ -134,4 +134,4 @@ We currently do not accept direct contributions. Please follow the guidelines be
 - **Support**: For support, please contact us via [agojevic@tvz.hr] or [nikolina.kucelin@gmail.com]
 
 ## Motivation
-- This project is made as part of a student competition.
+- This project is developed as part of an academic competition.
