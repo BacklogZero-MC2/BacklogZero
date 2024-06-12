@@ -77,8 +77,9 @@ const Document = ({params}) => {
 
     return (
         <div className="pageMain">
-            <div>
-                {card}
+            {card}
+            <div className="desc">
+
             </div>
         </div>
     )
