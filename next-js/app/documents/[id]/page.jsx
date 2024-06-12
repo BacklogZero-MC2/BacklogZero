@@ -34,6 +34,7 @@ const getCard = async (docId) => {
     const username = await getUser(data.authorId);
     return (
         <Card
+            id={docId}
             key={docId}
             className="card"
             username={username}

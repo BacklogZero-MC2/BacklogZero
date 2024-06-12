@@ -48,6 +48,7 @@ const getCard = (docId) => {
     })
     .then(data => {
         return <Card
+            id={docId}
             className="card"
             username={getUser(data.authorId)}
             n_votes={data.numOfUpvotes}

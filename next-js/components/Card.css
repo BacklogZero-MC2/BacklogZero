@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .card{
     background-color: white;
     border: 1px solid rgb(218, 218, 218);
@@ -43,14 +47,22 @@
     margin: 0px 3px;
 }
 .vote-arrow{
-    margin: 0px 2px 0px 0px;
+    float: left;
+    margin: 2px 3px 0px 0px;
+}
+.vote-num{
+    float: left;
 }
 .comments{
     float: left;
-    margin: 0px 3px;
+    margin: 0px 8px;
 }
 .comment-cloud{
-    margin: 0px 2px 0px 8px;
+    float: left;
+    margin: 2px 3px 0px 0px;
+}
+.comment-num{
+    float: left;
 }
 .time{
     float: right;
@@ -58,4 +70,7 @@
 }
 .gray{
     color: #979797;
+}
+.darkGray{
+    color: #353535;
 }
