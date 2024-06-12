@@ -65,7 +65,7 @@ const getCard = (docId) => {
             username={getUser(data.authorId)}
             n_votes={data.numOfUpvotes}
             n_comments={0}
-            duration_ago="31min"
+            duration_ago={data.createdTimestamp}
             is_bookmarked={false}
             title={data.title}
             description={data.searchableText}
