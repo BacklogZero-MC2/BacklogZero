@@ -29,10 +29,10 @@ class DocumentRepositoryImpl(
             FROM (
             SELECT *
             FROM documents_view
-            SORT BY popularity_approx DESC
+            ORDER BY popularity_approx DESC
             LIMIT 500
             )
-            SORT BY popularity DESC
+            ORDER BY popularity DESC
             LIMIT 100
             ;
         """

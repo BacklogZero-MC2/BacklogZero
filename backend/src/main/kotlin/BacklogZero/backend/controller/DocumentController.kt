@@ -31,4 +31,9 @@ class DocumentController(private val documentService: DocumentService) {
         documentService.deleteDocument(id)
     }
 
+    @GetMapping("/feed")
+    fun getFeed(): List<Document> {
+        return documentService.getFeed()
+    }
+
 }
