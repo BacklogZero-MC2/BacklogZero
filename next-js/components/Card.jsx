@@ -17,16 +17,18 @@ const baseUrl = "http://localhost:3000/documents/"
 const Card = ({id, title, description, username, n_votes, n_comments, duration_ago, is_bookmarked}) => {
     const url = baseUrl + id
 
+    const isAd = false;
+
     return (
     <Link href={url}>
     <div className="card">
         <div className="cardTop">
-            <h5 className="cardUsername darkGray">{username}</h5>
+            <h5 className={"cardUsername " + (isAd ? "green" : "darkGray")}>{username}</h5>
             <FontAwesomeIcon className="share gray" icon={faShareNodes} />
             <FontAwesomeIcon className="bkmrk gray" icon={faBookmark} />
         </div>
         <div className="cardMain">
-            <h3 className="title darkGray">{title}</h3>
+            <h3 className={"title " + (isAd ? "green" : "darkGray")}>{title}</h3>
             <p className="description darkGray">{description}</p>
         </div>
         <div className="cardBottom">
