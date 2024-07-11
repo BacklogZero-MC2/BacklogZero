@@ -34,12 +34,13 @@ const getCard = async (docId) => {
     const username = await getUser(data.authorId);
     return (
         <Card
+            id={docId}
             key={docId}
             className="card"
             username={username}
             n_votes={data.numOfUpvotes}
             n_comments={0}
-            duration_ago="31min"
+            duration_ago={data.createdTimestamp}
             is_bookmarked={false}
             title={data.title}
             description={data.searchableText}
@@ -76,8 +77,9 @@ const Document = ({params}) => {
 
     return (
         <div className="pageMain">
-            <div>
-                {card}
+            {card}
+            <div className="desc">
+
             </div>
         </div>
     )

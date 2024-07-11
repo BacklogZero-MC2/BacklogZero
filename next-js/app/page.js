@@ -27,7 +27,7 @@ const page = () => {
       <p className='introP'>Log In To Access Your Personalized Learning Journey</p>
 
       <div className='formBox'>
-          <form>
+          <form action="http://localhost:3000/feed">
             <label for="logInEmail" class="logInEmailLabel">Email or username</label>
             <input type="email" name="logInEmail" id="logInEmail" placeholder='youremail@tvz.hr' class="logInEmailField"></input>
 

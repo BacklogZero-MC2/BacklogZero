@@ -17,6 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowTrendUp, faSort, faFilter } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faUser } from "@fortawesome/free-regular-svg-icons";
 
+const feedUrl = "http://localhost:3001/api/documents/feed";
 const documentUrl = "http://localhost:3001/api/documents/";
 const userUrl = "http://localhost:3001/api/users/";
 
@@ -26,6 +27,17 @@ const options = {
         "Content-Type": "application/json"
     }
 };
+
+const getFeed = () => {
+    return fetch(feedUrl, options)
+    .then(response => {
+        if(!response.ok){
+            throw new Error("Network response was not ok: " + response.status);
+        }
+        return response.json();
+    })
+    .then(data => data.map(doc => doc.id))
+}
 
 const getUser = (userId) => {
     return fetch(userUrl + userId, options)
@@ -48,11 +60,12 @@ const getCard = (docId) => {
     })
     .then(data => {
         return <Card
+            id={docId}
             className="card"
             username={getUser(data.authorId)}
             n_votes={data.numOfUpvotes}
             n_comments={0}
-            duration_ago="31min"
+            duration_ago={data.createdTimestamp}
             is_bookmarked={false}
             title={data.title}
             description={data.searchableText}
@@ -67,9 +80,13 @@ const fetchCards = (docIds, setCards) => setCards(getCards(docIds))
 
 
 const page = () => {
+    const [ids, setIds] = useState([]);
+
+    useEffect(() => {getFeed().then(res => {setIds(res)})}, []);
+
     const [cards, setCards] = useState([]);
 
-    useEffect(() => {fetchCards([4,5,7,13,15,21,24,29,31], setCards)}, [])
+    useEffect(() => {fetchCards(ids, setCards)}, [ids])
 
     return (
         <div className="pageMain">
